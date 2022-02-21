@@ -16,7 +16,7 @@ const Routes = ()=>{
         <Switch>
         
         <Route exact path="/"><Home snacks={snacks} drinks={drinks}/></Route>
-        <Route exact path="/snacks"><Menu snacks={snacks} /></Route>
+        <Route exact path="/snacks"><Menu snacks={snacks} drinks={drinks}/></Route>
         <Route exact path="/snacks/:id"><Snack snacksItems={snacks} cantFind="/snacks" /></Route>
         <Route exact path="/drinks"><Menu drinks={drinks} /></Route>
         <Route exact path="/drinks/:id"><Snack drinksItems={drinks} cantFind="/drinks" /></Route>
