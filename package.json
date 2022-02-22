@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rahulkapoor07.github.io/Snack-or-Booze-React",
   "name": "snack-or-booze",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "slugify": "^1.3.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4"
+    "@testing-library/jest-dom": "^4.2.4",
+    "gh-pages": "^3.2.3"
   }
 }
