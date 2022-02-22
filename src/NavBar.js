@@ -7,19 +7,19 @@ function NavBar() {
   return (
     <div>
       <Navbar expand="md">
-        <Link exact to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           Snack or Booze
         </Link>
 
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <Link exact to="/snacks">Snacks</Link>
+            <Link to="/snacks">Snacks</Link>
           </NavItem>
           <NavItem>
-          <Link exact to="/drinks">Drinks</Link>
+          <Link to="/drinks">Drinks</Link>
           </NavItem>
           <NavItem>
-          <Link exact to="/add-new">Add New</Link>
+          <Link to="/add-new">Add New</Link>
           </NavItem>
         </Nav>
       </Navbar>
