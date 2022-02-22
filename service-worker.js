@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Snack-or-Booze-React/precache-manifest.8a486a2aada277f1fbdec20c005b71a2.js"
+  "/Snack-or-Booze-React/precache-manifest.7cffdd291804e8b2f47a614bbcc07b80.js"
 );
 
 self.addEventListener('message', (event) => {
