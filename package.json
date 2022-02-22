@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rahulkapoor07.github.io/Snack-or-Booze-React",
+  "homepage": "https://rahulkapoor07.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -b master -d build",
     "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
     "build": "react-scripts build",
     "test": "react-scripts test",

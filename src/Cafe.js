@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import SnackOrBoozeApi from "./Api";
 import cafeContext from "./cafeContext";
@@ -46,11 +46,13 @@ function Cafe({children}) {
   // collectData function to Route component where I have put all the routes with thier 
   // respective components.
   return(
+    <BrowserRouter>
     <cafeContext.Provider value={{drinks, snacks, collectFormData}}>
 
     {children}
 
   </cafeContext.Provider>
+  </BrowserRouter>
   )
 }
 
